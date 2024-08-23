@@ -56,7 +56,7 @@ ScrollReveal().reveal(".about__btn", {
   delay: 2000,
 });
 
-// card container
+// room container
 ScrollReveal().reveal(".room__card", {
   ...scrollRevealOption,
   interval: 500,
@@ -71,37 +71,30 @@ ScrollReveal().reveal(".service__list li", {
 
 // Explore container
 ScrollReveal().reveal(".section__header", {
-    ...scrollRevealOption,
-    interval: 1000,
-    origin: "left",
-  });
-
-ScrollReveal().reveal(".section__subheader", {
-    ...scrollRevealOption,
-    interval: 1500,
-    origin: "right",
-  });
+  ...scrollRevealOption,
+  interval: 1000,
+  origin: "left",
+});
 
 ScrollReveal().reveal(".explore__content", {
-    ...scrollRevealOption,
-    origin: "left",
-  });
+  ...scrollRevealOption,
+  origin: "left",
+});
 
 ScrollReveal().reveal(".box", {
-    ...scrollRevealOption,
-    origin: "left",
-  });
+  ...scrollRevealOption,
+  origin: "left",
+});
 
+// =========== CLOSE AND OPEN OF DESCRIPTION ========= //
+const about_readMoreButton = document.querySelector(".btn_read_more");
+const descriptionText = document.querySelector(".section__description");
 
-
-const about_readMoreButton = document.querySelector('.btn_read_more');
-const descriptionText = document.querySelector('.section__description');
-
-about_readMoreButton.addEventListener('click', () => {
-    descriptionText.classList.toggle('show-more');
-    if (descriptionText.classList.contains('show-more')) {
-        about_readMoreButton.textContent = 'Read Less';
-    } else {
-        about_readMoreButton.textContent = 'Read More';
-    }
+about_readMoreButton.addEventListener("click", () => {
+  descriptionText.classList.toggle("show-more");
+  if (descriptionText.classList.contains("show-more")) {
+    about_readMoreButton.textContent = "Read Less";
+  } else {
+    about_readMoreButton.textContent = "Read More";
+  }
 });

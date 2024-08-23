@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  /* --primary-color: #e82574; */
-  /* --primary-color: #ff7f42; */
   --primary-color: #ff3334;
-  /* --primary-color: #888888; */
-  /* --primary-color-dark: #bc1c5c; */
   --primary-color-dark: #ff7f42;
   --text-dark: #0c0a09;
   --text-light: #78716c;
@@ -76,13 +72,10 @@
   background-color: var(--primary-color-dark);
 }
 
-img {
-  width: 100%;
-  display: flex;
-}
+/* ====================  HEADER ================== */
 
 .header_logo_container img {
-  width: 60px; /* Adjust max-width as needed */
+  width: 60px;
   margin-right: 10px;
 }
 
@@ -96,13 +89,15 @@ img {
   font-size: 1em;
   color: var(--white);
 }
+/* ====================  HEADER ================== */
+
+img {
+  width: 100%;
+  display: flex;
+}
 
 a {
   text-decoration: none;
-}
-
-.logo {
-  max-width: 120px;
 }
 
 html,
@@ -410,8 +405,9 @@ nav {
 
 .service__list li:nth-child(1) span {
   color: #fb7185;
-  background-color: #ffe4e6;
+  background-color: #dbeafe;
 }
+
 .service__list li:nth-child(2) span {
   color: #f472b6;
   background-color: #fce7f3;
@@ -419,12 +415,12 @@ nav {
 
 .service__list li:nth-child(3) span {
   color: #00ff37;
-  background-color: #d9ffe1;
+  background-color: #f3e8ff;
 }
 
 .service__list li:nth-child(4) span {
   color: #c084fc;
-  background-color: #f3e8ff;
+  background-color: #ffe4e6;
 }
 
 .banner__content {
@@ -459,7 +455,8 @@ nav {
 }
 
 .explore__bg {
-  padding-block: 7rem;
+  margin-top: 4rem;
+  padding-block: 3rem;
   display: grid;
   grid-template-columns:
     minmax(1rem, 1fr)
@@ -493,6 +490,7 @@ nav {
   color: var(--text-dark);
 }
 
+/* !! */
 .explore__content .section__description:hover {
   color: var(--primary-color);
   transition: background-color 0.5s ease, color 0.3s ease;
@@ -504,9 +502,9 @@ nav {
   border: 1px solid var(--primary-color);
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  /* transition: background-color 0.3s ease-in-out; */
 }
 
+/* !! */
 .text-content {
   max-width: 100%;
 }
@@ -521,8 +519,6 @@ nav {
 
 .explore__content .btn i {
   margin-left: 3px;
-  transition: 0.3s ease-in-out;
-  /* transition: color 0.3s ease; */
 }
 
 .explore__content .btn:hover {
@@ -530,6 +526,7 @@ nav {
   background-color: var(--primary-color);
 }
 
+/* !! */
 .explore__content .btn:hover i {
   color: var(--white);
 }
@@ -578,6 +575,8 @@ nav {
   transform: scale(1.02);
 }
 
+/* =================== GOOGLE MAP LOCATION =================== */
+
 .footer {
   background-color: var(--text-dark);
 }
@@ -594,7 +593,7 @@ nav {
 
 .footer__col h4 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--white);
@@ -650,7 +649,7 @@ nav {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  /* !! */
   .text-content h1 {
     font-size: 2.5em;
   }
@@ -725,6 +724,11 @@ nav {
     grid-column: 2/3;
   }
 
+  .footer__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* !! */
   .container_google-maps-location {
     flex-direction: row;
   }
@@ -739,11 +743,7 @@ nav {
 
   .map-content iframe {
     width: 600px;
-    height: 450px;
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(4, 1fr);
+    height: 500px;
   }
 }
 
@@ -751,7 +751,7 @@ nav {
   .room__grid {
     gap: 2rem;
   }
-
+  /* !! */
   .text-content h1 {
     font-size: 2.5rem;
     max-width: 600px;
@@ -766,7 +766,7 @@ nav {
   }
 
   .map-content iframe {
-    width: 1000px;
-    height: 700px;
+    width: 700px;
+    height: 450px;
   }
 }
